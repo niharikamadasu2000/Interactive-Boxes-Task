@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="container">
+  <h2>Yay! It's BOGO </h2>
+
+  <!-- main container  -->
+  <div class="box" data-box="1">
+    <div class="box-header">
+      <label class="radio-container">
+        <input type="radio" name="select">
+        <span class="checkmark"></span>
+      </label>
+      <div>
+        <p class="box-title">1 Unit</p>
+        <p class="offer">10% Off</p>
+      </div>
+      <p class="price">₹499</p>
+    </div>
+    <div class="box-content">
+      <p>No extra choices needed </p>
+    </div>
+  </div>
+
+  <!-- sub container-->
+  <div class="box popular" data-box="2">
+    <div class="tag">Most Popular</div>
+    <div class="box-header">
+      <label class="radio-container">
+        <input type="radio" name="select">
+        <span class="checkmark"></span>
+      </label>
+      <div>
+        <p class="box-title">2 Units</p>
+        <p class="offer">20% Off</p>
+      </div>
+      <p class="price">₹799</p>
+    </div>
+    <div class="box-content">
+      <label>Size:</label>
+      <select>
+        <option>Select size</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select>
+
+      <label>Color:</label>
+      <select>
+        <option>Select color</option>
+        <option>Red</option>
+        <option>Black</option>
+        <option>Blue</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- mini container -->
+  <div class="box" data-box="3">
+    <div class="box-header">
+      <label class="radio-container">
+        <input type="radio" name="select">
+        <span class="checkmark"></span>
+      </label>
+      <div>
+        <p class="box-title">3 Units</p>
+        <p class="offer">30% Off</p>
+      </div>
+      <p class="price">₹999</p>
+    </div>
+    <div class="box-content">
+      <p>No extra choices here </p>
+    </div>
+  </div>
+
+  <div class="summary">
+    <p>Free Delivery </p>
+    <h3>Total: <span id="totalPrice">₹799</span></h3>
+  </div>
+
+  <button class="btn">Add to Cart</button>
+
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
